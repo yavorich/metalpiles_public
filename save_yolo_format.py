@@ -136,7 +136,7 @@ def parseArguments(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir',type=str,
                         help='the path of the dataset')
-    parser.add_argument('--save_dir', type = str, help = 'the path where zip file will be saved')
+    parser.add_argument('--save_dir', type = str, help = 'the path where files will be saved')
     
     return parser.parse_args(argv)    
     
