@@ -69,6 +69,9 @@ def create_yolo_files(frames_path, video_name, save_dir):
         ports_list = []
         
         img = data['imageData']
+        if not img:
+            print(f'{json_path} has no img data. Please, check this file.')
+            continue
         img = base64.b64decode(img)
         img = np.frombuffer(img, dtype = np.uint8)
         img = cv2.imdecode(img, 1)
