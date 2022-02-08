@@ -34,11 +34,6 @@ def load_to_ftp_data(label_data, video_dir, frame_name, labelme_user, user, pass
         session.storbinary('STOR ' + frame_name + '.json', binary_label_data)
         # session.quit()
 
-
-address = '195.69.187.77'
-user = 'user33917'
-password = 'iXtiHRfJQltm'
-
 # load_to_ftp(os.path.join('data', 'test_data.txt'),
 #             'test/test_data.txt',
 #             'user33917',
